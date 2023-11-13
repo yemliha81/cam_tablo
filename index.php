@@ -1,6 +1,6 @@
 <?php
 
-define( 'EXT_DIR', '/kokulife/');
+define( 'EXT_DIR', '/cam_demo/');
 define( 'FATHER_BASE', 'https://' . $_SERVER['HTTP_HOST'] . EXT_DIR );
 
 //die($_SERVER['HTTP_HOST']);

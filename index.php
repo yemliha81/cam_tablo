@@ -1,6 +1,13 @@
 <?php
 
-define( 'EXT_DIR', '/cam_demo/');
+require 'vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+define( 'EXT_DIR', '/cam_tablo/');
 define( 'FATHER_BASE', 'https://' . $_SERVER['HTTP_HOST'] . EXT_DIR );
 
 //die($_SERVER['HTTP_HOST']);

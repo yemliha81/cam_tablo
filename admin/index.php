@@ -1,9 +1,15 @@
 <?php
-define( 'EXT_DIR', '/kokulife/admin/');
-define( 'FATHER_BASE', 'https://' . $_SERVER['HTTP_HOST'] . EXT_DIR );
+require 'vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+define( 'FATHER_BASE', $_ENV['BASE_URL'] );
 
 //die($_SERVER['HTTP_HOST']);
-define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'].EXT_DIR );
+define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] );
 
 /*
  *---------------------------------------------------------------

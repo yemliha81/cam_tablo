@@ -88,18 +88,6 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="<?php echo FATHER_BASE;?>template/js/startmin.js"></script>
-    <script>
-        if (window.location.protocol == 'http:') {
-	
-        	console.log("you are accessing us via "
-        		+ "an insecure protocol (HTTP). "
-        		+ "Redirecting you to HTTPS.");
-        		
-        	window.location.href =
-        		window.location.href.replace(
-        				'http:', 'https:');
-        }
-
-    </script>
+    
     </body>
 </html>

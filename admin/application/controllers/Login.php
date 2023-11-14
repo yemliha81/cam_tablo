@@ -28,7 +28,8 @@ class Login extends CI_Controller {
 		if(!empty($check)){
 		    $_SESSION['admin_logged_in'] = 1;
 		    $_SESSION['full_name'] = $check['full_name'];
-		    redirect(FATHER_BASE);
+			//debug($_SESSION);
+		    redirect($_ENV['BASE_URL']);
 		}else{
 		    $_SESSION['login_error'] = 1;
 		    redirect(LOGIN);

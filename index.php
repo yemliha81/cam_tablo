@@ -7,11 +7,10 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-define( 'EXT_DIR', '/cam_tablo/');
-define( 'FATHER_BASE', 'https://' . $_SERVER['HTTP_HOST'] . EXT_DIR );
+define( 'FATHER_BASE', $_ENV['HTTP_PROTOCOL'] . $_SERVER['HTTP_HOST'].'/' );
 
 //die($_SERVER['HTTP_HOST']);
-define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'].EXT_DIR );
+define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] );
 
 /*
  *---------------------------------------------------------------

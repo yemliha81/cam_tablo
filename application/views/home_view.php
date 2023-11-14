@@ -3,10 +3,10 @@
     <div class="fullwidth-template">
         <div class="home-slider-banner home-banner">
             <div>
-                <img src="<?php echo FATHER_BASE;?>assets/cam-demo-images/banner-1.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-1.jpg" width="100%" />
             </div>
             <div>
-                <img src="<?php echo FATHER_BASE;?>assets/cam-demo-images/banner-2.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-2.jpg" width="100%" />
             </div>
             <!--<div class="container">
                 <div class="row10">
@@ -167,7 +167,7 @@
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
                                                 <a href="#">
-                                                    <img src="<?php echo FATHER_BASE;?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
+                                                    <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
                                                 </a>
                                                 <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">

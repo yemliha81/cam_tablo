@@ -9,42 +9,7 @@
                 <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/cam-banner-1.jpg" width="100%" />
             </div>
         </div>
-        <div class="banner-wrapp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="banner">
-                            <div class="item-banner style4">
-                                <div class="inner">
-                                    <div class="banner-content">
-                                        <h4 class="stelina-subtitle">SEWOX</h4>
-                                        <h3 class="title">Big Babol Aromalı Dekoratif</h3>
-                                        <div class="description">
-                                            120 Ml Bambu Çubuklu Oda Kokusu
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="banner">
-                            <div class="item-banner style5">
-                                <div class="inner">
-                                    <div class="banner-content">
-                                        <h4 class="stelina-subtitle">SEWOX</h4>
-                                        <h3 class="title">Limon Aromalı Oda Kokusu</h3>
-                                        <div class="description">
-                                            120 Ml Bambu Çubuklu Oda Kokusu
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="banner-wrapp rows-space-65">
             <div class="container">
                 <div class="banner">

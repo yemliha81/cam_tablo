@@ -131,12 +131,10 @@ define( 'UPDATE_PRODUCT_POST', FATHER_BASE.'product/update_product_post/' );
 define( 'DELETE_PRODUCT', FATHER_BASE.'product/delete_product/' );
 define( 'HIDE_PRODUCT', FATHER_BASE.'product/hide_product/' );
 
-
-
-define( 'STATISTICS', FATHER_BASE.'welcome/stats' );
-
-
-
-
-
-
+define( 'PAGE_LIST', FATHER_BASE.'page/page_list/' );
+define( 'ADD_PAGE', FATHER_BASE.'page/add_page/' );
+define( 'ADD_PAGE_POST', FATHER_BASE.'page/add_page_post/' );
+define( 'UPDATE_PAGE', FATHER_BASE.'page/update_page/' );
+define( 'UPDATE_PAGE_POST', FATHER_BASE.'page/update_page_post/' );
+define( 'DELETE_PAGE', FATHER_BASE.'page/delete_page/' );
+define( 'HIDE_PAGE', FATHER_BASE.'page/hide_page/' );

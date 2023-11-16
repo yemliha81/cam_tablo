@@ -366,7 +366,7 @@
     <div style="text-align:center;">
         <div>
             <a class="" href="<?php echo FATHER_BASE;?>">
-                <img src="<?php echo FATHER_BASE;?>template/img/kokulife-logo.jpg" width="150px"/>
+                <img src="<?php echo FATHER_BASE;?>template/img/cam-tablo-demo-logo.png" width="150px"/>
             </a>
         </div>
     </div>

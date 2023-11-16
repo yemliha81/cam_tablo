@@ -1,17 +1,11 @@
 <?php include('includes/header.php');?>
-
 	<div class="holder">
 	    <div class="container">
-		<div class="page-title text-center">
-			<b><?php echo  $page['page_name_'.$lang];?></b>
+		<div class="page-title text-center" style="margin-top:20px; font-size:20px;">
+			<b><?php echo  $page['page_name_en'];?></b>
 		</div>
-		<?php if($page['type'] == '0'){ ?>
-		<div>
-		    <img src='<?php echo PAGE_PATH.'1000/'.$page['page_image'];?>' width='100%' />
-		</div>
-		<?php } ?>
 		<div style="margin-top:20px;">
-			<?php echo  $page['page_description_'.$lang];?>
+			<?php echo  $page['page_description_en'];?>
         </div>
 </div>
 <?php include('includes/footer.php');?>

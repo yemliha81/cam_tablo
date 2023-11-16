@@ -10,7 +10,7 @@ $dotenv->load();
 define( 'FATHER_BASE', $_ENV['BASE_URL'] );
 
 //die($_SERVER['HTTP_HOST']);
-define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] );
+define( 'DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] . $_ENV['BASE_FOLDER'] );
 
 /*
  *---------------------------------------------------------------

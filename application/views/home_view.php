@@ -3,81 +3,11 @@
     <div class="fullwidth-template">
         <div class="home-slider-banner home-banner">
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-1.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/cam-banner-2.jpg" width="100%" />
             </div>
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-2.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/cam-banner-1.jpg" width="100%" />
             </div>
-            <!--<div class="container">
-                <div class="row10">
-                    <div class="col-lg-12 silider-wrapp">
-                        <div class="home-slider">
-                            <div class="slider-owl owl-slick equal-container nav-center"
-                                 data-slick='{"autoplay":true, "autoplaySpeed":9000, "arrows":false, "dots":true, "infinite":true, "speed":1000, "rows":1}'
-                                 data-responsive='[{"breakpoint":"2000","settings":{"slidesToShow":1}}]'>
-                                <div class="slider-item style7">
-                                    <div class="slider-inner equal-element">
-                                        <div class="slider-infor">
-                                            <h5 class="title-small">
-                                                Sale up to 40% off!
-                                            </h5>
-                                            <h3 class="title-big">
-                                                Spring Summer <br/>Collection
-                                            </h3>
-                                            <div class="price">
-                                                New Price:
-                                                <span class="number-price">
-														$270.00
-													</span>
-                                            </div>
-                                            <a href="#" class="button btn-shop-the-look bgroud-style">Shop now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-item style8">
-                                    <div class="slider-inner equal-element">
-                                        <div class="slider-infor">
-                                            <h5 class="title-small">
-                                                Take A perfume
-                                            </h5>
-                                            <h3 class="title-big">
-                                                Up to 25% Off <br/>order now
-                                            </h3>
-                                            <div class="price">
-                                                Save Price:
-                                                <span class="number-price">
-														$170.00
-													</span>
-                                            </div>
-                                            <a href="#" class="button btn-shop-product">Shop now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-item style9">
-                                    <div class="slider-inner equal-element">
-                                        <div class="slider-infor">
-                                            <h5 class="title-small">
-                                                Stelina Best Collection
-                                            </h5>
-                                            <h3 class="title-big">
-                                                A range of <br/>perfume
-                                            </h3>
-                                            <div class="price">
-                                                New Price:
-                                                <span class="number-price">
-														$250.00
-													</span>
-                                            </div>
-                                            <a href="#" class="button btn-chekout">Shop now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>-->
         </div>
         <div class="banner-wrapp">
             <div class="container">
@@ -92,7 +22,6 @@
                                         <div class="description">
                                             120 Ml Bambu Çubuklu Oda Kokusu
                                         </div>
-                                        <a href="#" class="button btn-shop-now">İncele</a>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +37,6 @@
                                         <div class="description">
                                             120 Ml Bambu Çubuklu Oda Kokusu
                                         </div>
-                                        <a href="#" class="button btn-shop-now">İncele</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +60,7 @@
                                 <div class="banner-price">
                                     
                                 </div>
-                                <a href="#" class="button btn-shop-now">Ürünleri İncele</a>
+                                <a href="<?php echo PRODUCT_LIST;?>" class="button btn-shop-now">Ürünleri İncele</a>
                             </div>
                         </div>
                     </div>
@@ -159,14 +87,14 @@
                                                 <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+															Yeni
 														</span>
 													</span>
                                             </div>
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>">
                                                     <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
                                                 </a>
                                                 <div class="thumb-group">
@@ -175,14 +103,14 @@
                                                             <a href="#">Add to Wishlist</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">İncele</a>
+                                                    <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>" class="button quick-wiew-button">İncele</a>
                                                     
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#"><?php echo $product['product_name_en'];?></a>
+                                                <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>"><?php echo $product['product_name_en'];?></a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -195,10 +123,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                    <?php echo $product['product_price']+50;?> ₺
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                    <?php echo $product['product_price'];?> ₺
                                                     </ins>
                                                 </div>
                                             </div>
@@ -226,7 +154,7 @@
                                         Ücretsiz Kargo
                                     </h4>
                                     <div class="text">
-                                        250₺ ve üzeri siparişlerde<br>
+                                        500₺ ve üzeri siparişlerde<br>
                                         Ücretsiz kargo!
                                     </div>
                                 </div>
@@ -278,7 +206,8 @@
     $(document).ready(function(){
       $('.home-banner').slick({
         autoplay: true,
-        arrows: false
+        arrows: false,
+        speed: 2000,
       });
     });
 </script>

@@ -17,18 +17,24 @@ class Product extends CI_Controller {
 	public function detail($id)
 	{
 		
-		$data['product'] = $this->db->select('*, category_table.id as cat_id, products_table.id as id')
-		    ->join('category_table', 'products_table.cat_id = category_table.id', 'left')
+		$data['product'] = $this->db->select('*')
+		    //->join('category_table', 'products_table.cat_id = category_table.id', 'left')
     		->where('products_table.id', $id)
     		->get('products_table')->row_array();
-    	
-    	$data['last_products'] = $this->db->select('*, category_table.id as cat_id, products_table.id as id')
-    		->join('category_table', 'products_table.cat_id = category_table.id', 'left')
-    		->limit('8')
-    		->order_by('products_table.id', 'desc')
-    		->get('products_table')->result_array();
     	    
     	$this->load->view('product_view', $data);
+
+	}
+
+	public function product_list()
+	{
+		
+		$data['products'] = $this->db->select('*')
+			->where('is_deleted', 0)
+    		->get('products_table')->result_array();
+    	
+    	    
+    	$this->load->view('product_list_view', $data);
 
 	}
 	

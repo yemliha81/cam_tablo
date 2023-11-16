@@ -20,8 +20,9 @@
                 border: 1px solid #ddd;
                 border-radius: 10px;
                 overflow: hidden;
-                padding: 15px;
+                padding: 30px;
                 box-sizing: border-box;
+                width:380px;
             }
             .welcome-msg{
                 display: flex;
@@ -57,14 +58,14 @@
             <div class="welcome-div">
                 <form action="<?php echo LOGIN_POST;?>" method="post">
                     <div>
-                        <img src="<?php echo FATHER_BASE;?>template/img/kokulife-logo.jpg" width="240px"/>
+                        <img src="<?php echo FATHER_BASE;?>template/img/cam-tablo-demo-logo.png" width="240px"/>
                     </div>
                     <div class="welcome-msg">
                         <div>
-                            <input type="text" name="username" placeholder="Username" required/> 
+                            <input type="text" name="username" placeholder="Kullanıcı adı" required/> 
                         </div>
                         <div>
-                            <input type="password" name="password" placeholder="Password" required/> 
+                            <input type="password" name="password" placeholder="Şifre" required/> 
                         </div>
                         <div>
                             <input type="submit" class="btn" value="GİRİŞ" /> 

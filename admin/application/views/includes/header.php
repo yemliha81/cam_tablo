@@ -61,7 +61,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <a class="navbar-brand" href="<?php echo FATHER_BASE;?>">
-                <img src="<?php echo FATHER_BASE;?>template/img/felix-logo.svg" width="100px"/>
+                <img src="<?php echo FATHER_BASE;?>template/img/cam-tablo-demo-logo.png" width="100px"/>
             </a>
         </div>
 

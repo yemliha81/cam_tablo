@@ -35,6 +35,15 @@ REPONSIVE
 /*==========================================================================
   1.0 COMPONENT STYLES
 ============================================================================ */
+@font-face {
+    font-family: 'ArtegraSansBold';
+    src: url('../fonts/artegra-bold-700.eot');
+    src: url('../fonts/artegra-bold-700.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/artegra-bold-700.woff2') format('woff2'),
+         url('../fonts/artegra-bold-700.woff') format('woff'),
+         url('../fonts/artegra-bold-700.ttf')  format('truetype'),
+         url('../fonts/artegra-bold-700.svg#FSP DEMO - Artegra Sans') format('svg');
+}
 body {
 	font-family: 'Jost', sans-serif;
 	font-size: 16px;
@@ -1198,7 +1207,7 @@ table tr:last-child td, table tr:last-child th {
 	margin-left: 0;
 }
 .slick-slide {
-	padding: 0 15px;
+	padding: 0;
 }
 .slick-slider .slick-arrow {
 	display: inline-block;
@@ -7344,8 +7353,9 @@ body.vertical-menu-open .vertical-menu-overlay {
 	width: 100%;
 }
 .header-nav-wapper .vertical-wapper, .header-nav-wapper .header-nav {
-	display: table-cell;
-	vertical-align: middle;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-nav-wapper .vertical-wapper {
 	width: 270px;

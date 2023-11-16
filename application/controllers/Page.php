@@ -14,9 +14,9 @@ class Page extends CI_Controller {
         }
     }
     
-	public function index($id){
+	public function index($page_seo_title){
 	    
-	    $data['page'] = $this->db->select('*')->where('id', $id)->get('page_table')->row_array();
+	    $data['page'] = $this->db->select('*')->where('page_seo_title', $page_seo_title)->get('pages_table')->row_array();
 	    
 	    $this->load->view('page_view', $data);
 	}

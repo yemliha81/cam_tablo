@@ -86,46 +86,43 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 
-define( 'ASSETS', FATHER_BASE.'assets/' );
-define( 'BANNER_PATH', FATHER_BASE.'files/banner/img/' );
-define( 'CATEGORY_IMAGE_PATH', FATHER_BASE.'files/category/img/' );
-define( 'PRODUCT_IMAGE_PATH', FATHER_BASE.'files/product/img/' );
-define( 'VARIANT_IMG_PATH', FATHER_BASE.'files/variant/img/100/' );
-define( 'PAGE_PATH', FATHER_BASE.'files/page/img/' );
+define( 'ASSETS', $_ENV['BASE_URL'].'assets/' );
+define( 'BANNER_PATH', $_ENV['BASE_URL'].'files/banner/img/' );
+define( 'CATEGORY_IMAGE_PATH', $_ENV['BASE_URL'].'files/category/img/' );
+define( 'PRODUCT_IMAGE_PATH', $_ENV['BASE_URL'].'files/product/img/' );
+define( 'VARIANT_IMG_PATH', $_ENV['BASE_URL'].'files/variant/img/100/' );
+define( 'PAGE_PATH', $_ENV['BASE_URL'].'files/page/img/' );
 
-define( 'CHANGE_LANG', FATHER_BASE.'welcome/change_lang/' );
-define( 'PRODUCT_DETAIL', FATHER_BASE.'product/detail/' );
-define( 'CATEGORY_DETAIL', FATHER_BASE.'kategori/' );
-define( 'SEARCH_PRODUCT', FATHER_BASE.'product/search/' );
+define( 'CHANGE_LANG', $_ENV['BASE_URL'].'welcome/change_lang/' );
+define( 'PRODUCT_DETAIL', $_ENV['BASE_URL'].'product/detail/' );
+define( 'CATEGORY_DETAIL', $_ENV['BASE_URL'].'kategori/' );
+define( 'SEARCH_PRODUCT', $_ENV['BASE_URL'].'product/search/' );
 
-define( 'CART', FATHER_BASE.'cart/');
-define( 'SHOW_CART', FATHER_BASE.'cart/show/');
-define( 'ADD_TO_CART', FATHER_BASE.'cart/add/');
-define( 'REMOVE_FROM_CART', FATHER_BASE.'cart/remove/');
-define( 'EMPTY_CART', FATHER_BASE.'cart/empty/');
-define( 'CHECKOUT', FATHER_BASE.'cart/checkout/');
-define( 'ORDER_SAVE_POST', FATHER_BASE.'cart/order_save_post/');
-define( 'PAYMENT_PAGE', FATHER_BASE.'cart/payment/');
-define( 'PAYMENT_CALLBACK', FATHER_BASE.'cart/payment_callback/');
-
-
-
-define( 'USER_ACCOUNT', FATHER_BASE.'user/account/');
-define( 'LOGIN', FATHER_BASE.'user/login/');
-define( 'LOGOUT', FATHER_BASE.'user/logout/');
-define( 'LOGIN_POST', FATHER_BASE.'user/login_post/');
-define( 'SIGNUP', FATHER_BASE.'user/signup/');
-define( 'SIGNUP_POST', FATHER_BASE.'user/signup_post/');
-define( 'UPDATE_ACCOUNT_POST', FATHER_BASE.'user/update_account_post/');
-define( 'ORDER_DETAILS', FATHER_BASE.'user/order_details/');
-
-define( 'PAGE_DETAIL', FATHER_BASE.'page/index/');
-define( 'CONTACT_PAGE', FATHER_BASE.'page/contact/');
-define( 'SUPPORT_PAGE', FATHER_BASE.'page/support/');
+define( 'CART', $_ENV['BASE_URL'].'cart/');
+define( 'SHOW_CART', $_ENV['BASE_URL'].'cart/show/');
+define( 'ADD_TO_CART', $_ENV['BASE_URL'].'cart/add/');
+define( 'REMOVE_FROM_CART', $_ENV['BASE_URL'].'cart/remove/');
+define( 'EMPTY_CART', $_ENV['BASE_URL'].'cart/empty/');
+define( 'CHECKOUT', $_ENV['BASE_URL'].'cart/checkout/');
+define( 'ORDER_SAVE_POST', $_ENV['BASE_URL'].'cart/order_save_post/');
+define( 'PAYMENT_PAGE', $_ENV['BASE_URL'].'cart/payment/');
+define( 'PAYMENT_CALLBACK', $_ENV['BASE_URL'].'cart/payment_callback/');
 
 
 
+define( 'USER_ACCOUNT', $_ENV['BASE_URL'].'user/account/');
+define( 'LOGIN', $_ENV['BASE_URL'].'user/login/');
+define( 'LOGOUT', $_ENV['BASE_URL'].'user/logout/');
+define( 'LOGIN_POST', $_ENV['BASE_URL'].'user/login_post/');
+define( 'SIGNUP', $_ENV['BASE_URL'].'user/signup/');
+define( 'SIGNUP_POST', $_ENV['BASE_URL'].'user/signup_post/');
+define( 'UPDATE_ACCOUNT_POST', $_ENV['BASE_URL'].'user/update_account_post/');
+define( 'ORDER_DETAILS', $_ENV['BASE_URL'].'user/order_details/');
+
+//define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'page/index/');
+define( 'CONTACT_PAGE', $_ENV['BASE_URL'].'page/contact/');
+define( 'SUPPORT_PAGE', $_ENV['BASE_URL'].'page/support/');
 
 
-
-
+define( 'PRODUCT_LIST', $_ENV['BASE_URL'].'product/product_list/');
+define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'kurumsal/');

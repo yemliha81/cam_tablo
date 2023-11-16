@@ -29,7 +29,7 @@
 
     <div class="page-content">
         
-        <a href="<?php echo PRODUCT_LIST.$c_id;?>" class="select-lang"><span class="lnr lnr-chevron-left"></span> Back to Food list</a>
+        <a href="<?php echo PRODUCT_LIST.$c_id;?>" class="select-lang"><span class="lnr lnr-chevron-left"></span> Ürün Listesine dön</a>
         
         <div class="main-content m-t-20">
             <div class="">
